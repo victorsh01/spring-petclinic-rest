@@ -1,4 +1,9 @@
-# REST version of Spring PetClinic Sample Application (spring-framework-petclinic extend ) [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-rest.png?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-rest/)
+# REST version of Spring PetClinic
+
+Infotiv's project for IT-Högskolan's test automation course 2021 
+
+![alt petclinic-junit](git-res/infotiv.png)
+![alt petclinic-junit](git-res/iths.png)
 
 This backend version of the Spring Petclinic application only provides a REST API. **There is no UI**.
 The [spring-petclinic-angular project](https://github.com/spring-petclinic/spring-petclinic-angular) is a Angular front-end application which consumes the REST API.
@@ -16,7 +21,6 @@ You can then access petclinic here: [http://localhost:9966/petclinic/](http://lo
 
 ## Working with petclinic in terminal (Linux)
 
-### With maven command line
 ```
 git clone https://github.com/spring-petclinic/spring-petclinic-rest.git
 cd spring-petclinic-rest
@@ -26,12 +30,14 @@ cd spring-petclinic-rest
 ## Working with Petclinic in intelliJ IDEA
 After opening the project, in the project tab -> src/main/java/PetClientApplication -> right click and run .. main()
 
+```
 Run -> Edit configuration -> in "Run/Debug configuration" add two configurations by pressing "+" ->  Junit -> "The type of resources that search for test" : "All in package" -> Apply, OK
+```
 
 ![alt petclinic-junit](git-res/petclinic-junit.png)
 Now there has to be two run profiles:
-- Application
-- JUnit
+- Application: for running the server
+- JUnit: for running test suite
 
 
 ## Working with Petclinic in Eclipse/STS

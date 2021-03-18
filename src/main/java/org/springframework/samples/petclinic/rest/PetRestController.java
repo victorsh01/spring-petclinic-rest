@@ -62,6 +62,16 @@ public class PetRestController {
 		return new ResponseEntity<Pet>(pet, HttpStatus.OK);
 	}
 
+    @PreAuthorize( "hasAnyRole(@roles.OWNER_ADMIN, @roles.VET_ADMIN)" )
+    @RequestMapping(value = "/isMyPetSpecial/{petName}", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<PetType> getIsMyPetSpecial(@PathVariable("petName") String petName){
+
+        if(petName.equals("cat")){
+            return new ResponseEntity<PetType>(HttpStatus.OK);
+        }
+        return new ResponseEntity<PetType>(HttpStatus.NOT_FOUND);
+    }
+
     @PreAuthorize( "hasRole(@roles.OWNER_ADMIN)" )
 	@RequestMapping(value = "", method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<Collection<Pet>> getPets(){

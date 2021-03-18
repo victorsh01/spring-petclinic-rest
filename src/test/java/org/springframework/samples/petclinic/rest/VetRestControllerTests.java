@@ -16,6 +16,7 @@
 
 package org.springframework.samples.petclinic.rest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -106,6 +107,14 @@ public class VetRestControllerTests {
             .andExpect(jsonPath("$.id").value(1))
             .andExpect(jsonPath("$.firstName").value("James"));
     }
+
+
+    @Test
+    @WithMockUser(roles="VET_ADMIN")
+    public void testMath() throws Exception {
+        assertEquals(0*9, 1*5, "Black hole check: Make sure this code is running in a parallel universe with Math=OFF ");
+    }
+
 
     @Test
     @WithMockUser(roles="VET_ADMIN")

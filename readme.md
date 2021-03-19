@@ -19,12 +19,12 @@ You can then access petclinic here: [http://localhost:9966/petclinic/](http://lo
 ## Swagger REST API documentation presented here (after application start):
 [http://localhost:9966/petclinic/swagger-ui.html](http://localhost:9966/petclinic/swagger-ui.html)
 
-## Working with petclinic in terminal (Linux)
+## Working with petclinic in terminal
 
 ```
 git clone https://github.com/spring-petclinic/spring-petclinic-rest.git
 cd spring-petclinic-rest
-./mvnw spring-boot:run
+maven spring-boot:run   ## not working? try using mvnw.cmd and ./mvnw in linux
 ```
 
 ## Working with Petclinic in intelliJ IDEA
@@ -114,3 +114,7 @@ POST /api/users
 | Spring Data JPA | [springdatajpa folder](src/main/java/org/springframework/samples/petclinic/repository/springdatajpa) |
 | Tests | [AbstractClinicServiceTests.java](src/test/java/org/springframework/samples/petclinic/service/AbstractClinicServiceTests.java) |
 
+
+## Credits
+All credit goes to [Spring Project](https://spring.io).
+Adjustments for the course in 2021 is done by Hamid Ebadi.

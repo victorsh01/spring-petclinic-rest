@@ -6,13 +6,11 @@ Infotiv's project for IT-Högskolan's test automation course 2021
 ![alt petclinic-junit](git-res/iths.png)
 
 This backend version of the Spring Petclinic application only provides a REST API. **There is no UI**.
-The [spring-petclinic-angular project](https://github.com/spring-petclinic/spring-petclinic-angular) is a Angular front-end application which consumes the REST API.
+The [spring-petclinic-angular project](https://github.com/ebadi/spring-petclinic-angular) is a Angular front-end application which consumes the REST API.
 
 ## Understanding the Spring Petclinic application with a few diagrams
 
 [See the presentation of the Spring Petclinic Framework version](http://fr.slideshare.net/AntoineRey/spring-framework-petclinic-sample-application)
-
-
 
 You can then access petclinic here: [http://localhost:9966/petclinic/](http://localhost:9966/petclinic/)
 
@@ -66,9 +64,7 @@ File -> Import -> Maven -> Existing Maven project
 
 ## Screenshot of the Angular client
 
-<img width="1427" alt="spring-petclinic-angular2" src="https://cloud.githubusercontent.com/assets/838318/23263243/f4509c4a-f9dd-11e6-951b-69d0ef72d8bd.png">
-
-
+![alt petclinic-angular](git-res/screenshot.png)
 
 ### Petclinic ER Model
 
@@ -117,4 +113,4 @@ POST /api/users
 
 ## Credits
 All credit goes to [Spring Project](https://spring.io).
-Adjustments for the course in 2021 is done by Hamid Ebadi.
+Adjustments for the test automation course in 2021 is done by Hamid Ebadi.

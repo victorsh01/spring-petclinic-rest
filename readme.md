@@ -14,9 +14,6 @@ The [spring-petclinic-angular project](https://github.com/ebadi/spring-petclinic
 
 You can then access petclinic here: [http://localhost:9966/petclinic/](http://localhost:9966/petclinic/)
 
-## Swagger REST API documentation presented here (after application start):
-[http://localhost:9966/petclinic/swagger-ui.html](http://localhost:9966/petclinic/swagger-ui.html)
-
 ## Working with petclinic in terminal
 
 ```
@@ -24,6 +21,8 @@ git clone https://github.com/spring-petclinic/spring-petclinic-rest.git
 cd spring-petclinic-rest
 maven spring-boot:run   ## not working? try using mvnw.cmd and ./mvnw in linux
 ```
+## Swagger REST API documentation presented here (after application start):
+[http://localhost:9966/petclinic/swagger-ui.html](http://localhost:9966/petclinic/swagger-ui.html)
 
 ## Working with Petclinic in intelliJ IDEA
 After opening the project, in the project tab -> src/main/java/PetClientApplication -> right click and run .. main()
